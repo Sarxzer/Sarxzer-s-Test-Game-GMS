@@ -3,3 +3,7 @@
 function print(_text){
 	show_debug_message(_text)
 }
+
+function roundTo(_value, _round){
+	return round(_value * (1/_round)) * _round
+}

@@ -19,6 +19,7 @@
   "ResourceOrderSettings":[
     {"name":"oGun","order":2,"path":"objects/oGun/oGun.yy",},
     {"name":"oWall","order":1,"path":"objects/oWall/oWall.yy",},
+    {"name":"ConfigIni","order":1,"path":"scripts/ConfigIni/ConfigIni.yy",},
     {"name":"sGun","order":2,"path":"sprites/sGun/sGun.yy",},
     {"name":"sWall","order":1,"path":"sprites/sWall/sWall.yy",},
   ],
