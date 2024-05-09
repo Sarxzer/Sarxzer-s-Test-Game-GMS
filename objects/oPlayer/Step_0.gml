@@ -21,8 +21,8 @@ if (_jump && place_meeting(x, y+1, oWall)) {
 
 // Shoot
 if (_shoot && _shoot_cooldown<=current_time) {
-	hspd = -lengthdir_x(10, _mouse_angle_rad)
-	vspd = -lengthdir_y(10, _mouse_angle_rad)
+	hspd += -lengthdir_x(10, _mouse_angle_rad)
+	vspd += -lengthdir_y(10, _mouse_angle_rad)
 	
 	_shoot_cooldown = current_time + 1000
 }
@@ -69,6 +69,14 @@ if place_meeting(x+hspd, y+vspd, oWall) {
 	hspd = 0
 	vspd = 0
 	show_debug_message("diagonal colision!")
+}
+
+if place_meeting(x, y, oEnemy) {
+	life -= 1
+}
+
+if life == 0 {
+	instance_destroy(self)
 }
 
 

@@ -17,9 +17,11 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"oEnemy","order":3,"path":"objects/oEnemy/oEnemy.yy",},
     {"name":"oGun","order":2,"path":"objects/oGun/oGun.yy",},
     {"name":"oWall","order":1,"path":"objects/oWall/oWall.yy",},
     {"name":"ConfigIni","order":1,"path":"scripts/ConfigIni/ConfigIni.yy",},
+    {"name":"sEnemy","order":3,"path":"sprites/sEnemy/sEnemy.yy",},
     {"name":"sGun","order":2,"path":"sprites/sGun/sGun.yy",},
     {"name":"sWall","order":1,"path":"sprites/sWall/sWall.yy",},
   ],

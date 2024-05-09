@@ -6,6 +6,8 @@ mouse_y_prev = 0
 hspd = 0
 vspd = 0
 
+life = 5
+
 jump_h = 6
 
 g = 0.1

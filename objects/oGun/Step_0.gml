@@ -1,4 +1,4 @@
-x = round(oPlayer.x)
-y = round(oPlayer.y)
+x = oPlayer.x
+y = oPlayer.y
 
-image_angle = radtodeg(arctan((x-mouse_x)/(y-mouse_y)))
+image_angle = point_direction(x, y, mouse_x, mouse_y)
