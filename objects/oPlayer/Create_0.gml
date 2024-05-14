@@ -1,7 +1,7 @@
-/// @description Insert description here
-// You can write your code in this editor
 mouse_x_prev = 0
 mouse_y_prev = 0
+
+colide_with = [oWall, oEnemy]
 
 hspd = 0
 vspd = 0

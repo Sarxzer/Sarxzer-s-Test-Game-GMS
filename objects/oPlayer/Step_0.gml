@@ -14,7 +14,7 @@ if hspd <= 5 && hspd >= -5 {
 }
 
 // Jumping mechanism
-if (_jump && place_meeting(x, y+1, oWall)) {
+if (_jump && place_meeting(x, y+1, colide_with)) {
     show_debug_message("Jumping!");
     vspd = -jump_h;
 }
@@ -28,11 +28,11 @@ if (_shoot && _shoot_cooldown<=current_time) {
 }
 
 // Side colision
-if place_meeting(x+hspd, y, oWall) {
-	while !place_meeting(x+sign(hspd), y, oWall) {
+if place_meeting(x+hspd, y, colide_with) {
+	while !place_meeting(x+sign(hspd), y, colide_with) {
 		x += sign(hspd)
 	}
-	while place_meeting(x, y, oWall) {
+	while place_meeting(x, y, colide_with) {
 		x += sign(hspd)
 	}
 	hspd = 0
@@ -40,11 +40,11 @@ if place_meeting(x+hspd, y, oWall) {
 }
 
 // Down colision
-if place_meeting(x, y+vspd, oWall) {
-	while !place_meeting(x, y+sign(vspd), oWall) {
+if place_meeting(x, y+vspd, colide_with) {
+	while !place_meeting(x, y+sign(vspd), colide_with) {
 		y += sign(vspd)
 	}
-	while place_meeting(x, y, oWall) {
+	while place_meeting(x, y, colide_with) {
 		y -= sign(vspd)
 	}
 	vspd = 0
@@ -52,27 +52,23 @@ if place_meeting(x, y+vspd, oWall) {
 }
 
 // Diagonal colision (to prevent tp glitch)
-if place_meeting(x+hspd, y+vspd, oWall) {
+if place_meeting(x+hspd, y+vspd, colide_with) {
 	print("hspd: " + string(hspd))
-	while place_meeting(x+sign(hspd), y, oWall) {
+	while place_meeting(x+sign(hspd), y, colide_with) {
 		x += sign(hspd)
 		print("x: " + string(x))
 	}
-	while place_meeting(x, y+sign(vspd), oWall) {
+	while place_meeting(x, y+sign(vspd), colide_with) {
 		y += sign(vspd)
 		print("y: " + string(y))
 	}
-	while place_meeting(x, y, oWall) {
+	while place_meeting(x, y, colide_with) {
 		x -= sign(hspd)
 		y -= sign(vspd)
 	}
 	hspd = 0
 	vspd = 0
 	show_debug_message("diagonal colision!")
-}
-
-if place_meeting(x, y, oEnemy) {
-	life -= 1
 }
 
 if life == 0 {
