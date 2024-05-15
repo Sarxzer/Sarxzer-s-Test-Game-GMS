@@ -17,7 +17,6 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"oAll","order":4,"path":"objects/oAll/oAll.yy",},
     {"name":"oEnemy","order":3,"path":"objects/oEnemy/oEnemy.yy",},
     {"name":"oGun","order":2,"path":"objects/oGun/oGun.yy",},
     {"name":"oWall","order":1,"path":"objects/oWall/oWall.yy",},

@@ -34,7 +34,6 @@
   },
   "name":"Sarxzer's Test Game GMS",
   "resources":[
-    {"id":{"name":"oAll","path":"objects/oAll/oAll.yy",},},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},},
     {"id":{"name":"oGun","path":"objects/oGun/oGun.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},

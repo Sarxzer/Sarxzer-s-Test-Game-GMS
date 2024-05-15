@@ -1,1 +1,0 @@
-damage_text = []

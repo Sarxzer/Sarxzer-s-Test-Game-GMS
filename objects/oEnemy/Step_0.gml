@@ -3,6 +3,4 @@ if (place_meeting(x, y, oPlayer) || place_meeting(x+1, y, oPlayer) || place_meet
 	
 	cooldown = current_time + damage_cooldown
 	print("dammage")
-	_damage("-" + string(damage))
 }
-

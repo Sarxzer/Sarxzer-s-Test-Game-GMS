@@ -72,7 +72,7 @@ if place_meeting(x+hspd, y+vspd, colide_with) {
 }
 
 if life == 0 {
-	instance_destroy(self)
+	game_end()
 }
 
 
